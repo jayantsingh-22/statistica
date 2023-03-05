@@ -1,4 +1,4 @@
- # World Bank Graph Application
+ # Statistica - A World Bank API based service
 
 # Introduction
 
