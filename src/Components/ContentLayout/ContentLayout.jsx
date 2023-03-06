@@ -43,7 +43,7 @@ const ContentLayout = (props) => {
           className="figure d-flex flex-column float-start justify-content-between align-items-center"
           style={{ height: "55%" }}
         >
-          {isDesktopOrLaptop ? <h1 className="display-3 text-primary">Statistica</h1> : null}
+          {isDesktopOrLaptop ? <h1 className="display-3 heading">Statistica</h1> : null}
           <h2 className="tagline text-center">Stats and data on topics that matter.</h2>
           <p className="info-para lead text-center">
             Statistica is a web app service that provides figures, data and statistics on several economic indicators of

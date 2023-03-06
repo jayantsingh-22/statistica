@@ -6,6 +6,8 @@
   padding: 0 !important;
   transition: 0.3s box-shadow ease-in;
   border: 2px solid rgb(168, 168, 168);
+  background: rgba(78, 78, 78, 0.212);
+  color: white;
 
   &:hover {
     box-shadow: $box-shadow;
@@ -51,7 +53,7 @@
     }
 
     &__button {
-      color: #2a2a2a;
+      color: #6c6c6c;
       font-weight: bolder;
       opacity: 0.75;
       width: 1em;
@@ -121,6 +123,15 @@
       height: 100%;
     }
   }
+}
+
+.btn {
+  color: rgb(17, 163, 231);
+  border: solid rgb(17, 163, 231);
+}
+
+.btn:hover {
+  border: solid 1px rgb(17, 163, 231);
 }
 
 .card-select-country {

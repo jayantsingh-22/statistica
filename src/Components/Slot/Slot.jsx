@@ -114,11 +114,11 @@ const Slot = (props) => {
     return (
       <div
         id={`emptySlot-${id}`}
-        className="col bg-transparent card graph-card graph-card--empty justify-content-center align-items-center"
+        className="col card graph-card graph-card--empty justify-content-center align-items-center card-blank"
       >
         <button
           type="button"
-          className="btn btn-outline-primary graph-card--empty__add-graph-button"
+          className="btn btn-outline-dark graph-card--empty__add-graph-button"
           onClick={handleAddGraphHere}
         >
           <i className="bi-plus-lg" />

@@ -98,7 +98,7 @@ const SideLayout = (props) => {
             </div>
 
             <div className="col-10 sidelayout-header d-flex align-items-center">
-              <h1 className="display-3 text-primary">Graph App</h1>
+              <h1 className="display-3 text-primary">Statistica</h1>
             </div>
           </div>
           <div
@@ -108,12 +108,12 @@ const SideLayout = (props) => {
             aria-labelledby="offcanvasExampleLabel"
           >
             <div className="offcanvas-header">
-              <p className="h5 ">Select Region</p>
+              <p className="h5 card-region">Select Region</p>
               <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" />
             </div>
             <div className="offcanvas-body">
               <div className="col-12 sidelayout ">
-                <div className="card sidelayout__card" style={{ height: "100%" }}>
+                <div className="card sidelayout__card">
                   <div className="card-body sidelayout__card__body">{renderDisplay()}</div>
                 </div>
               </div>
@@ -125,6 +125,7 @@ const SideLayout = (props) => {
     return (
       <div className="col col-lg-2 col-md-2 col-sm-1 sidelayout ">
         <div className="card sidelayout__card" style={{ height: "100%" }}>
+          <h5 className="text-center card-region">Select Region</h5>
           <div className="card-body sidelayout__card__body">{renderDisplay()}</div>
         </div>
       </div>

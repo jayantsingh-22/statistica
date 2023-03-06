@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
-import { Tooltip } from "bootstrap";
+// import { Tooltip } from "bootstrap";
 
-import { noData } from "../../Constants/keywords";
 import { graphText, handleTooltipTitle, xAxisLabelFormat, yAxisTickFormat } from "../../libs/helpers/graphFormatting";
+import { noData } from "../../Constants/keywords";
 
 const BarChart = (props) => {
   const { axisLabels, graphData, id, dimensions, indicatorInfo, orderData, indicatorUnit } = props;
@@ -16,6 +16,15 @@ const BarChart = (props) => {
   const color = "#5902ab";
 
   const svgRef = useRef(null);
+
+  // const renderTooltip = () => {
+  //   return (
+  //     <div style={{ position: "fixed" }} className="tooltip" id={`${id}-line-tooltip`} role="tooltip">
+  //       <div className="tooltip-arrow" style={{ transform: "translate(0, 125%)" }} />
+  //       <div className="tooltip-inner">Tooltip Here</div>
+  //     </div>
+  //   );
+  // };
 
   const convertValues = (val) => {
     if (val < 0) {
@@ -130,6 +139,8 @@ const BarChart = (props) => {
 
       svg.append("g").call(yAxis);
 
+      // const tooltip = d3.select(`[id="${id}-line-tooltip"]`);
+
       return setGraphRendered(true);
     },
     [yValue, xAxisLabel, indicatorInfo, graphData, height, width, graphDataValues, meanValue, id, indicatorUnit]
@@ -145,21 +156,25 @@ const BarChart = (props) => {
   // Bar Tooltips
   useEffect(() => {
     if (graphRendered) {
-      const bars = Array.from(document.querySelectorAll(`[id="graph-bar"]`));
-
-      bars.map((tooltip) => {
-        return new Tooltip(tooltip, {
-          trigger: "hover",
-          animation: true,
-          placement: "top",
-          html: true,
-          title: tooltip.getAttribute("title"),
-        });
-      });
+      // const bars = Array.from(document.querySelectorAll(`[id="graph-bar"]`));
+      // bars.map((tooltip) => {
+      //   return new Tooltip(tooltip, {
+      //     trigger: "hover",
+      //     animation: true,
+      //     placement: "top",
+      //     html: true,
+      //     title: tooltip.getAttribute("title"),
+      //   });
+      // });
     }
   }, [graphRendered, id, graphData]);
 
-  return <svg ref={svgRef} x="0" y="0" style={{ width: "100%", height: "100%" }} />;
+  return (
+    <>
+      <svg ref={svgRef} x="0" y="0" style={{ width: "100%", height: "100%" }} />
+      {/* {renderTooltip()} */}
+    </>
+  );
 };
 
 export default BarChart;
