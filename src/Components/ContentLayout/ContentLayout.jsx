@@ -45,7 +45,7 @@ const ContentLayout = (props) => {
         >
           {isDesktopOrLaptop ? <h1 className="display-3 heading">Statistica</h1> : null}
           <h2 className="tagline text-center">Stats and data on topics that matter.</h2>
-          <p className="info-para lead text-center">
+          <p className="info-para text-center">
             Statistica is a web app service that provides figures, data and statistics on several economic indicators of
             different countries over a varied period of time. <br />
             It fetches latest information from the <a href="https://www.worldbank.org/en/home">World Bank</a> sources
