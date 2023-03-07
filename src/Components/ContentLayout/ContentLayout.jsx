@@ -51,11 +51,30 @@ const ContentLayout = (props) => {
             It fetches latest information from the <a href="https://www.worldbank.org/en/home">World Bank</a> sources
             using the World Bank API.
           </p>
-          <button type="button" className="btn btn-outline-primary add-graph-button" onClick={handleAddGraph}>
+          <button type="button" className="btn btn-outline-dark add-graph-button" onClick={handleAddGraph}>
             <i className="bi-plus-lg" />
           </button>
         </figure>
         <p className="btn-text text-center">Select region on the left or click the button above to get started.</p>
+        <div className="learn-more">
+          <p className="topics">To learn more, visit :</p>
+          <section className="topic-links">
+            <ul className="topics-list">
+              <li>
+                <a href="https://data.worldbank.org/">World Bank</a>
+              </li>
+              <li>
+                <a href="https://www.imf.org/en/Data">IMF</a>
+              </li>
+              <li>
+                <a href="https://tradingeconomics.com/">Trading Economics</a>
+              </li>
+              <li>
+                <a href="https://data.oecd.org/">OECD</a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
     );
   };

@@ -18,6 +18,7 @@
   }
 }
 
+
 .add-graph-button {
   border-radius: 50% !important;
   width: 4rem;
@@ -45,6 +46,7 @@
 .tagline {
   color: grey;
   padding-top: 2%;
+  margin-top: 4%;
 }
 
 .info-para {
@@ -60,14 +62,60 @@
   color: gainsboro;
 }
 
-.info-para a{
+.info-para a {
   text-decoration: none;
   color: darkturquoise;
 }
 
-// .btn {
-//   margin: 2rem;
-// }
+.info-para a:hover {
+  text-decoration: underline;
+  color: hotpink;
+}
+
+.btn {
+  border-color: hotpink;
+}
+
 .btn-text {
   color: grey;
+}
+
+.learn-more{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  margin: 1% auto auto 24%;
+}
+.topics {
+  color: darkseagreen;
+  margin-top: 6%;
+  // margin-left: 6%;
+}
+
+.topic-links{
+  display: flex;
+  width: 100%;
+}
+
+.topics-list{
+  list-style: none;
+  display: inherit;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.topics-list li {
+  padding: 3%;
+  justify-content: center;
+}
+
+.topics-list a{
+  color: rgb(203, 175, 15);
+  text-decoration: none;
+}
+
+.topics-list a:hover{
+  color: gold;
 }
