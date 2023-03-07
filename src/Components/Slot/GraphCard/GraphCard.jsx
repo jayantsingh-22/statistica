@@ -364,7 +364,7 @@ const GraphCard = (props) => {
     return (
       <div className="modal fade " id={`modal-${graphCardId}`}>
         <div className={`modal-dialog ${modalSize()} graph-card__modal`}>
-          <div className="modal-content">
+          <div className="modal-content bg-dark">
             {modalOpen && fetched.graphCardDimensionsFetched ? renderCardContent() : <Loader />}
           </div>
         </div>

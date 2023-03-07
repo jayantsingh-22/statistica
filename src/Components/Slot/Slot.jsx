@@ -116,6 +116,9 @@ const Slot = (props) => {
         id={`emptySlot-${id}`}
         className="col card graph-card graph-card--empty justify-content-center align-items-center card-blank"
       >
+        <section>
+          <p className="select-cntry">Select a country by clicking the button.</p>
+        </section>
         <button
           type="button"
           className="btn btn-outline-dark graph-card--empty__add-graph-button"
