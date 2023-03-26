@@ -54,7 +54,7 @@ const SideLayout = (props) => {
             type="button"
             id={`list-${listOption.id}`}
             onClick={(e) => handleSelectedItem(e, listOption.id)}
-            className="list-group-item side-list-item list-group-item-action"
+            className="list-group-item side-list-item list-group-item-action text-dark"
           >
             {listOption.name}
           </button>
@@ -123,9 +123,9 @@ const SideLayout = (props) => {
       );
     }
     return (
-      <div className="col col-lg-2 col-md-2 col-sm-1 sidelayout ">
+      <div className="col col-lg-2 col-md-2 col-sm-1 sidelayout">
         <div className="card sidelayout__card" style={{ height: "100%" }}>
-          <h5 className="text-center card-region">Select Region</h5>
+          <h5 className="text-center card-region text-dark">Select Region</h5>
           <div className="card-body sidelayout__card__body">{renderDisplay()}</div>
         </div>
       </div>
