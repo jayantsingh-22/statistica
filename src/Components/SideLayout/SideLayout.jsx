@@ -98,7 +98,7 @@ const SideLayout = (props) => {
             </div>
 
             <div className="col-10 sidelayout-header d-flex align-items-center">
-              <h1 className="display-3 text-primary">Statistica</h1>
+              <h1 className="display-3">Statistica</h1>
             </div>
           </div>
           <div

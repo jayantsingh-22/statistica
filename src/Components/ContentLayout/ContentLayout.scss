@@ -135,7 +135,11 @@
   color: gold;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width:737px) {
+  .heading {
+    color: darkturquoise;
+  }
+
   .learn-more {
     width: 100%;
     margin: 1% auto 1% 0;
@@ -143,8 +147,27 @@
 
   .topics-list {
     display: flexbox;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  .info-para {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  line-height: 160%;
+  width: 75%;
+  height: auto;
+  margin: 4%;
+  padding: 2% 4% 2% 4%;
+  border: 2px solid rgb(117, 117, 117);
+  border-radius: 3rem 0 3rem 0;
+  justify-content: center;
+  align-content: center;
+  color: gainsboro;
   }
 }

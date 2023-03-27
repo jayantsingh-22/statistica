@@ -58,7 +58,7 @@ footer {
     margin-top: 2%;
   }
 
-  @media screen and (max-width: 768px) {
+  @media only screen and (max-width: 432px) {
     .ftr-row{
       display: flex;
       flex-wrap: nowrap;
@@ -111,5 +111,37 @@ footer {
           }
         }
       }
+  }
+  @media only screen and (max-width: 340px) {
+    .ftr-row{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    ul {
+      list-style: none;
+      li {
+        display: flex;
+        width: 100%;
+        margin: 0.5rem -0.5rem;
+        text-align: center;
+  
+        a {
+          color: rgb(163, 163, 163);
+          text-decoration: none;
+          width: 100%;
+          display: flexbox;
+  
+          &:hover {
+            color: rgb(249, 190, 112);
+          }
+          svg {
+            margin: 2% 0% 2% 0%;
+          }
+        }
+      }
+    }
   }
 }
