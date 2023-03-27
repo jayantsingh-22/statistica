@@ -8,7 +8,7 @@ function Footer() {
     <footer className="text-light ftr">
       <Container className="cntr">
         <Row className="ftr-row">
-          <Col className="col-3">
+          <Col className="col-3 ftr-col">
             <h6 className="ftr-head">Contact</h6>
             <ul className="list-unstyled">
               <li>
@@ -44,7 +44,7 @@ function Footer() {
               </li>
             </ul>
           </Col>
-          <Col className="col-3">
+          <Col className="col-3 ftr-col">
             <h6 className="ftr-head">About</h6>
             <ul className="list-unstyled">
               <li>
@@ -80,7 +80,7 @@ function Footer() {
               </li>
             </ul>
           </Col>
-          <Col className="col-3">
+          <Col className="col-3 ftr-col">
             <h6 className="ftr-head">Publication</h6>
             <ul className="list-unstyled">
               <li>
@@ -117,7 +117,7 @@ function Footer() {
               </li>
             </ul>
           </Col>
-          <Col className="col-3">
+          <Col className="col-3 ftr-col">
             <h6 className="ftr-head">Study</h6>
             <ul className="list-unstyled">
               <li>
