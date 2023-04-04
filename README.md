@@ -1,6 +1,6 @@
  # Statistica - A World Bank API based service
 
-# Introduction
+# Intro
 
 
 This application renders graphical representation of economic data from nations by their regions. The World Bank is the source of the data fetched in this application and also the provider of the APIs used.
