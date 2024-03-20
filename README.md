@@ -16,4 +16,6 @@ The technologies used to build this application are as follows :
 
 Also inclusive of these technologies are other dependencies that make this application function.
 
+New Deployment Link: https://statistica-six.vercel.app/
+
 
