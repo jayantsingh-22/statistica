@@ -1,14 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
+/* Global Styles */
+:root {
+  --hot-pink: hotpink;
+  --dark-turquoise: darkturquoise;
+  --gold: gold;
+  --gainsboro: gainsboro;
+}
+
+/* Content Layout */
 .content-layout {
   max-height: 100%;
-
   &--no-graph {
-    margin: 15px 0;
-    margin-top: 15px !important;
+    margin: 15px 0 !important;
   }
-
   &__card {
     position: relative;
     height: 100%;
@@ -21,8 +28,7 @@
   }
 }
 
-
-
+/* Buttons */
 .add-graph-button {
   border-radius: 50% !important;
   width: 3rem;
@@ -30,12 +36,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   i {
     width: 3rem;
   }
 }
 
+/* Media Queries */
 @media only screen and (max-width: 1224px) {
   .content-layout {
     height: 90%;
@@ -43,131 +49,135 @@
   }
 }
 
+@media only screen and (max-width:437px) {
+  .heading {
+    color: var(--dark-turquoise);
+  }
+  .learn-more {
+    // width: 100%;
+    margin: 1% auto 1% 0;
+  }
+  .topics-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .info-para {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    line-height: 160%;
+    text-align: justify;
+    width: 75%;
+    height: auto;
+    margin: 4%;
+    padding: 3rem;
+    border: 2px solid rgb(117, 117, 117);
+    border-radius: 3rem 0;
+    justify-content: center;
+    align-content: center;
+    color: var(--gainsboro);
+  }
+}
+
+/* Heading and Text Styles */
 .heading {
-  color: darkturquoise;
+  color: rgb(69, 188, 190);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
 }
 
 .tagline {
   color: rgb(232, 17, 236);
   padding-top: 2%;
   margin-top: 2.5%;
-  font-family: 'Amatic SC', cursive;
-  font-size: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .info-para {
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.1rem;
+  font-weight: 600;
   line-height: 160%;
   width: 75%;
   height: auto;
   margin: 3%;
-  padding: 1% 4% 1% 4%;
+  padding: 1% 4%;
   border: 2px solid rgb(117, 117, 117);
-  border-radius: 3rem 0 3rem 0;
+  border-radius: 3rem 0;
   justify-content: center;
   align-content: center;
-  color: gainsboro;
+  color: var(--gainsboro);
 }
 
 .info-para a {
   text-decoration: none;
-  color: darkturquoise;
+  color: var(--dark-turquoise);
 }
 
 .info-para a:hover {
   text-decoration: underline;
-  color: hotpink;
+  color: var(--hot-pink);
 }
 
 .btn {
-  border-color: hotpink;
+  border-color: var(--hot-pink);
 }
 
 .btn-text {
   color: grey;
 }
 
-.learn-more{
-  display: flexbox;
+.learn-more {
+  display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
-  margin: 1% 4% 1% 20%;
-  padding-bottom: 6%;
+  margin: auto;
+  padding: 1rem;
 }
+
 .topics {
   color: darkseagreen;
   margin-top: 2%;
   text-align: center;
 }
 
-.topic-links{
-  display: flexbox;
-  width: 100%;
+.topic-links {
+  display: flex;
+  align-items: center;
+  justify-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.topics-list{
+.topics-list {
   list-style: none;
-  display: flex;
   position: relative;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  display: flex;
   flex-direction: row;
 }
 
 .topics-list li {
-  padding: 3%;
+  padding: 1rem;
   justify-content: center;
 }
 
-.topics-list a{
+.topics-list a {
   color: rgb(203, 175, 15);
   text-decoration: none;
 }
 
-.topics-list a:hover{
-  color: gold;
-}
-
-@media only screen and (max-width:737px) {
-  .heading {
-    color: darkturquoise;
-  }
-
-  .learn-more {
-    width: 100%;
-    margin: 1% auto 1% 0;
-  }
-
-  .topics-list {
-    display: flexbox;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-
-  .info-para {
-  box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.1rem;
-  line-height: 160%;
-  width: 75%;
-  height: auto;
-  margin: 4%;
-  padding: 2% 4% 2% 4%;
-  border: 2px solid rgb(117, 117, 117);
-  border-radius: 3rem 0 3rem 0;
-  justify-content: center;
-  align-content: center;
-  color: gainsboro;
-  }
+.topics-list a:hover {
+  color: var(--gold);
 }

@@ -84,10 +84,10 @@ const SideLayout = (props) => {
     if (isTabletOrMobile) {
       return (
         <>
-          <div className="row" style={{ padding: "10px 10px 0 10px" }}>
+          <div className="row" style={{ padding: "10px 4px 0 4px" }}>
             <div className="col-2 sidelayout-burger-button d-flex align-items-center justify-content-center">
               <button
-                className="btn btn-outline-primary"
+                className="btn"
                 type="button"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#sideLayoutCanvas"
@@ -97,8 +97,13 @@ const SideLayout = (props) => {
               </button>
             </div>
 
-            <div className="col-10 sidelayout-header d-flex align-items-center">
-              <h1 className="display-3">Statistica</h1>
+            <div className="col-6 sidelayout-header d-flex align-items-center">
+              <h1
+                className="display-4 text-center text-uppercase fw-lighter my-auto
+              heading"
+              >
+                Statistica
+              </h1>
             </div>
           </div>
           <div

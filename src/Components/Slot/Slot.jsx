@@ -1,3 +1,4 @@
+// import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { useEffect, useState } from "react";
 import { indicators } from "../../Constants/indicators";
 import { Chart, Country, Indicator } from "../../Constants/keywords";
@@ -112,21 +113,23 @@ const Slot = (props) => {
 
   const renderEmptySlot = () => {
     return (
-      <div
-        id={`emptySlot-${id}`}
-        className="col card graph-card graph-card--empty justify-content-center align-items-center card-blank"
-      >
-        <section>
-          <p className="select-cntry">Select a country by clicking the button.</p>
-        </section>
-        <button
-          type="button"
-          className="btn btn-outline-dark graph-card--empty__add-graph-button"
-          onClick={handleAddGraphHere}
+      <>
+        <div
+          id={`emptySlot-${id}`}
+          className="col card graph-card graph-card--empty justify-content-center align-items-center card-blank mt-8"
         >
-          <i className="bi-plus-lg" />
-        </button>
-      </div>
+          <section>
+            <p className="select-cntry">Select a country by clicking the button.</p>
+          </section>
+          <button
+            type="button"
+            className="btn btn-outline-dark graph-card--empty__add-graph-button"
+            onClick={handleAddGraphHere}
+          >
+            <i className="bi-plus-lg" />
+          </button>
+        </div>
+      </>
     );
   };
 

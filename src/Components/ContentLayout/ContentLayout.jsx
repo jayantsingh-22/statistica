@@ -38,13 +38,15 @@ const ContentLayout = (props) => {
 
   const renderAddGraphButton = () => {
     return (
-      <div className="parent">
+      <div className="parent mb-n8">
         <figure
-          className="figure d-flex flex-column float-start justify-content-between align-items-center"
+          className="figure d-flex flex-column float-start justify-content-between align-items-center mt-4"
           style={{ height: "55%" }}
         >
-          {isDesktopOrLaptop ? <h1 className="display-3 heading text-center">Statistica</h1> : null}
-          <h2 className="tagline text-center">Stats and data on topics that matter.</h2>
+          {isDesktopOrLaptop ? (
+            <h1 className="heading display-4 text-center text-uppercase fw-lighter mt-4">Statistica</h1>
+          ) : null}
+          <h2 className="tagline text-center fw-normal fs-3">Stats and data on topics that matter.</h2>
           <p className="info-para text-center">
             Statistica is a web app service that provides figures, data and statistics on several economic indicators of
             different countries over a varied period of time. <br />

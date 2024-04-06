@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { BarChartStr, Chart, Country, Indicator, LineChartStr } from "../../../Constants/keywords";
 import Loader from "../../Loader";
+import "./SelectorCard.scss";
 
 const SelectorCard = (props) => {
   const { handleSelect, region, progress, regionFetched, indicatorsFetched, handleGoBack } = props;
@@ -141,8 +143,8 @@ const SelectorCard = (props) => {
   const renderButtonBack = () => {
     if (progress > 1) {
       return (
-        <div className="button-back col-2 justify-content-lg-start">
-          <button type="button" onClick={handleGoBack} className="btn btn-md btn-outline-primary">
+        <div className="button-back col-4 col-sm-2 justify-content-lg-start d-inline-block">
+          <button type="button" onClick={handleGoBack} className="btn btn-sm btn-outline-primary">
             Back
           </button>
         </div>
@@ -162,7 +164,15 @@ const SelectorCard = (props) => {
     <div className="col card card-select-country">
       {renderProgressBar()}
       <div className={renderClassName()}>{renderSelector()}</div>
-      {renderButtonBack()}
+
+      <div className="row d-inline-block btn-group">
+        {renderButtonBack()}
+        <div className="justify-content-start d-inline-block col-4 col-sm-2">
+          <Link to="/" className="btn btn-outline-primary btn-sm">
+            Home
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
